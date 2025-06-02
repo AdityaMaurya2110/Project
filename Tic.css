@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roleway",sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg,#fa3307,#ea0f84);
+    background-image: url("Images/adi7.jpg");
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
+html{
+    font-size: 16px;
+}
+.box{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.container{
+    width: 70vh;
+   height: 70vh;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2vh;
+}
+
+.button-click{
+    background-color: transparent;
+    height: 22vh;
+    width: 22vh;
+    border-radius: 19px;
+    font-size: 80px;
+    font-weight: 550;
+    color:  rgba(6, 242, 33, 0.9);
+    border-color: aqua;
+    backdrop-filter: blur(5px);
+    border-width: 4px;
+}
+#restart{
+    font-size: 25px;
+    margin-top: 2px;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: rgba(6, 194, 227, 0.7);
+    position: relative;
+    margin: 2px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.popup{
+    background: linear-gradient(135deg,#fa3307,#ea0f84);
+   height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1px;
+    font-size: 83px;
+}
+#game{
+    font-size: 50px;
+    padding: 5px 1em;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#message{
+
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+.popup.hide {
+    display: none;
+}
